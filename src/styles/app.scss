@@ -1,0 +1,78 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #222;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::selection {
+    background-color: rgba(1, 1, 1, 0.12);
+}
+
+img {
+    pointer-events: none;
+}
+
+.app {
+    background-color: $app-color;
+    width: 100%;
+    min-width: $app-width;
+    min-height: 100vh;
+    // background-image: linear-gradient($app-color, #32373a);
+
+    .main {
+        $w: 400px;
+        padding: 10px 8px;
+        padding-bottom: 4px;
+
+        &-left {
+            width: $w;
+            float: left;
+        }
+        &-right {
+            width: $w;
+            float: right;
+        }
+        &-center {
+            margin-left: $w;
+            margin-right: $w;
+
+            &-panel {
+                height: 618px;
+                background-color: #212121;
+                margin: 12px;
+                margin-top: 138px;
+                padding-bottom: 4px;
+            }
+        }
+
+        &::after {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+    }
+
+    > footer {
+        padding-bottom: 5px;
+        > p {
+            text-align: center;
+            font-size: 14px;
+            color: $text-color;
+            margin: 0;
+            a {
+                color: $text-color;
+            }
+        }
+    }
+}
+
+

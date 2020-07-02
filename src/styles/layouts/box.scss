@@ -1,0 +1,38 @@
+
+
+.layout-box {
+    padding: 8px;
+
+    & > .header {
+        position: relative;
+        width: 100%;
+        margin-bottom: 12px;
+
+        > h3 {
+            color: $text-light-color;
+            text-shadow: 1px 2px 2px rgba(1, 1, 1, 0.12);
+            margin: 0;
+            margin-left: 15px;
+            > span {
+                font-size: 10px;
+                color: lighten(#44827f, 22%);
+                margin-left: 6px;
+            }
+        }
+
+        .line {
+            position: absolute;
+            height: 2px;
+            width: 20px;
+            background-color: #0ff7ab;
+            bottom: -4px;
+            left: 32px;
+        }
+    }
+
+    & > .panel {
+        background-color: rgba(1, 1, 1, 0.28);
+        border-radius: 3px;
+        box-shadow: 1px 2px 22px rgba(1, 1, 1, 0.13);
+    }
+}

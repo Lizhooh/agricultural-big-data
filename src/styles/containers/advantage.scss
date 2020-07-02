@@ -1,0 +1,97 @@
+
+.advantage {
+    padding-bottom: 12px;
+
+    .list {
+        &-item {
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+            padding-right: 4px;
+            border-bottom: 0.5px solid rgba($theme-color, 0.15);
+        }
+        &-val {
+            color: $text-white-color;
+            width: 80px;
+            text-align: right;
+            padding-bottom: 4px;
+            padding-right: 6px;
+            font-size: 15px;
+        }
+        &-right {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+        &-icons {
+            position: relative;
+            padding: 0 3px;
+            > img {
+                width: 24px;
+                height: 24px;
+            }
+            > span {
+                position: absolute;
+                z-index: 2;
+                top: -18px;
+                left: -5px;
+                color: $text-color;
+                font-size: 13px;
+            }
+        }
+    }
+    .news {
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+
+        &-item {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            padding-top: 0;
+            &:first-child {
+                padding-top: 5px;
+            }
+        }
+        &-index {
+            background-color: $theme-color;
+            color: #343434;
+            font-weight: bold;
+            font-family: 'consolas';
+            font-size: 14px;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            border-radius: 15px;
+            display: block;
+            text-align: center;
+        }
+        &-title {
+            color: $text-color;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .mark-title {
+        color: $text-color;
+        padding: 16px;
+        padding-left: 30px;
+        padding-bottom: 0;
+        font-size: 13px;
+        position: relative;
+        display: block;
+        .dot {
+            display: block;
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 100%;
+            background-color: $text-color;
+            top: 24px; left: 19px;
+            z-index: 2;
+        }
+    }
+}

@@ -1,0 +1,110 @@
+
+.industrial {
+    .list {
+        color: #ddd;
+        display: flex;
+        text-align: center;
+        padding: 15px 12px;
+
+        &-item {
+            flex: 1;
+            background-color: rgba(47, 238, 226, 0.03);
+            margin: 0 12px;
+            position: relative;
+        }
+        &-title {
+            color: $text-color;
+            font-weight: bold;
+            background-color: rgba(30, 255, 60, 0.08);
+            height: 30px;
+            line-height: 30px;
+        }
+        &-val {
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            color: $text-white-color;
+        }
+    }
+
+    .mark-title {
+        color: $text-color;
+        padding: 16px;
+        padding-left: 30px;
+        padding-bottom: 0;
+        font-size: 13px;
+        position: relative;
+        display: block;
+        .dot {
+            display: block;
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 100%;
+            background-color: $text-color;
+            top: 24px; left: 19px;
+            z-index: 2;
+        }
+    }
+
+    .wordcloud {
+        height: 200px;
+        background-color: rgba(1, 1, 1, 0.1);
+        position: relative;
+
+        > span {
+            font-size: 14px;
+            // font-weight: bold;
+            position: absolute;
+            z-index: 2;
+            text-shadow: 1px 2px 2px rgba(1, 1, 1, 0.12);
+            transition: all 0.2s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.04);
+            border-radius: 35px;
+            padding: 0.2em 0.9em;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        .w1 {
+            color: #3c9;
+            top: 80px;
+            left: 170px;
+            font-size: 16px;
+        }
+        .w2 {
+            color: #78f;
+            left: 50px;
+            top: 20px;
+        }
+        .w3 {
+            color: #f34;
+            right: 50px;
+            top: 30px;
+            font-size: 20px;
+        }
+        .w4 {
+            color: #38f;
+            bottom: 20px;
+            right: 40px;
+            font-size: 18px;
+        }
+        .w5 {
+            color: #f90;
+            top: 65px;
+            left: 20px;
+            font-size: 16px;
+        }
+        .w6 {
+            color: #f7a;
+            bottom: 15px;
+            left: 40px;
+        }
+        .w7 {
+            color: #ff4;
+            left: 100px;
+            bottom: 50px;
+        }
+    }
+}
+

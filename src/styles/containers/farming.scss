@@ -1,0 +1,39 @@
+
+.farming {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    &-item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-icon {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        border: 0.5px solid rgba($theme-color, 0.15);
+        background-color: rgba(47, 238, 226, 0.05);
+
+        > img {
+            width: 55%;
+        }
+    }
+    &-right {
+        margin-left: 12px;
+    }
+    &-title {
+        color: darken($text-color, 12%);
+        font-weight: bold;
+    }
+    &-val {
+        color: $text-white-color;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+}

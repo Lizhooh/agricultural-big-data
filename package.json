@@ -1,0 +1,44 @@
+{
+  "name": "agricultural-big-data",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@antv/g2plot": "^1.1.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "animated-number-react": "^0.1.0",
+    "emotion": "^10.0.27",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-circular-progressbar": "^2.0.3",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "sass": "^1.26.8",
+    "serve": "^11.3.2",
+    "source-map-explorer": "^2.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "serve ./build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
