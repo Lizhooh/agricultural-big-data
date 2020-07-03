@@ -4,5 +4,5 @@
 
 看起来还可以，主题颜色偏绿色，无后端交互，知识一个静态页面。
 
-![](./src/assets/demo.png)
+<img src='./src/assets/demo.png' />
 
